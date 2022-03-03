@@ -13,9 +13,8 @@ Command | Description
 `arp -v`| displays the verbos infromation
 `arp -n` | displays shows numerical address instead of symbolic host, port, or usernames
 `arp -H ether` | checks for the ethernet ports
-`ping 0.0.0.0` | pings an unidentified IP address
 `arp -a` | displays the new host
-`arp -d ?` | deletes the new host
+`arp -d <enter an IP address from arp -a>` | deletes the specified host
 
 
 [Source](https://www.geeksforgeeks.org/arp-command-in-linux-with-examples/)
