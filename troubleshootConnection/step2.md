@@ -4,7 +4,7 @@ Use the link below to install traceroute
 
 `apt install -y traceroute`{{execute}}
 
-Traceroute is used to trace a network packet as it travels your network. It can be used to troubleshoot network delays and errors
+`traceroute` is used to trace a network packet as it travels your network. It can be used to troubleshoot network delays and errors
 
 Try the following commands in the terminal by typing them in:
 

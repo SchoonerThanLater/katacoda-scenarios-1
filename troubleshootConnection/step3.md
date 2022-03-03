@@ -1,6 +1,6 @@
 ## Using the netstat command ##
 
-netstat is used to get network statistics. It will print network connection details, kernel routing info, interface statistics, and open ports.
+`netstat` is used to get network statistics. It will print network connection details, kernel routing info, interface statistics, and open ports.
 
 Try the following commands in the terminal by typing them in:
 
