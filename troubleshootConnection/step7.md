@@ -4,12 +4,10 @@
 
 `gping` can display a ping graphically. Use the following command to install gping: 
 
-```
-echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
+```echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
 wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
 sudo apt update
-sudo apt install gping
-```{{execute}}
+sudo apt install gping```{{execute}}
 
 Try the following commands in the terminal by typing them in.
 If process are taking too long, use `^C`{{execute ctrl-seq}} to interrupt the sequence:
@@ -17,7 +15,9 @@ If process are taking too long, use `^C`{{execute ctrl-seq}} to interrupt the se
 Command | Description
 ---------------------|----------------------------------------------------
 `ping 8.8.8.8` | checks if the server google is online
+`gping 8.8.8.8` | shows graphical ping for google
 `ping canvas.nbps.org`| checks if the canvas is online
+`gping canvas.nbps.org` | shows graphical ping for canvas
 `ping -I docker0 8.8.8.8` | checks google through the docker0 port
 
 
