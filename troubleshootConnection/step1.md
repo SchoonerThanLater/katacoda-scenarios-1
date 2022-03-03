@@ -6,8 +6,8 @@ Command | Description
 ---------------------|----------------------------------------------------
 `ifconfig` | Display the current configuration of actyive interfaces only
 `ifconfig -a` | Display all interfaces information with are available, active or inactive
-`ifconfig eth0` | Display the configuration of the interface eth0
-`ifconfig eth0 up` | Activate eth0
+`ifconfig docker0` | Display the configuration of the interface eth0
+`ifconfig docker0 up` | Activate eth0
 
 
 On a Windows operating system, `ifconfig` would be replaced with `ipconfig`
