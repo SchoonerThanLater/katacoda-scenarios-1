@@ -1,5 +1,9 @@
 ## Using the nmblookup command ##
 
+Use the link below to install nmblookup
+
+`apt install samba-common-bin`{{execute}}
+
 `nmblookup` is used to resolve NetBIOS computer names into IP addresses.
 
 **Syntax:**
