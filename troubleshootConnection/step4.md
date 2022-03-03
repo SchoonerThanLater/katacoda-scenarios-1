@@ -8,7 +8,7 @@ Command | Description
 ---------------------|----------------------------------------------------
 `nslookup canvas.nbps.org` | find the IP address of the canvas.nbps.org domain name
 `nslookup -type=ns canvas.nbps.org`| find the authoritative nameserver of the domain name canvas.nbps.org
-`nslookup -query=mx canvas.nbps.org` | make a non-authoritative qurty of an mx record in `/etc/resolv.conf`
+`nslookup -query=mx canvas.nbps.org` | make a non-authoritative query of an mx record in `/etc/resolv.conf`
 
 
 
