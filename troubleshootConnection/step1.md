@@ -1,4 +1,4 @@
-##Using the ifconfig command##
+## Using the ifconfig command ##
 
 This command is used to display or modify the current configuration of network interfaces. You can also use `ip` in place if `ifconfig`. Using the commands `ip addr`{{execute}} or `ip link`{{execute}} will have similar displays. Try each of the following commands in the terminal as well. You will need to type in each command:
 
