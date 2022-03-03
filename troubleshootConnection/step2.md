@@ -10,9 +10,9 @@ Try the following commands in the terminal by typing them in:
 
 Command | Description
 ---------------------|----------------------------------------------------
-traceroute 8.8.8.8 | traces the route to google
-traceroute canvas.nbps.org | traces the route to canvas
-traceroute 0.0.0.0 | trace route to an unspecified address
+`traceroute 8.8.8.8` | traces the route to google
+`traceroute canvas.nbps.org` | traces the route to canvas
+`traceroute 0.0.0.0` | trace route to an unspecified address
 
 
 On a Windows operating system, `traceroute` would be replaced with `tracert`
