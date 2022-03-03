@@ -46,7 +46,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "ubuntu"
   },
   "backend": {
     "imageid": "bash"
