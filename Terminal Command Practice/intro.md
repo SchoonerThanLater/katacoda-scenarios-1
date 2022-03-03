@@ -1,0 +1,1 @@
+**Here you will test out some commands to use in a linux terminal called bash**
