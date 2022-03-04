@@ -12,7 +12,7 @@ Use the link below to install nmblookup
 Try the following commands in the terminal by typing them in:
 
 Command | Description
----------------------|----------------------------------------------------
+----------------------------|-----------------------------
 `nmblookup -A canvas.nbps.org` | gets the IP address for canvas.nbps.org
 `nmblookup -A wikipedia.org`| gets the IP address for wikipedia.org
 

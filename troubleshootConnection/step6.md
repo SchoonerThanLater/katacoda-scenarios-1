@@ -8,7 +8,7 @@
 Try the following commands in the terminal by typing them in:
 
 Command | Description
----------------------|----------------------------------------------------
+----------------------------|-----------------------------
 `arp -a` | displays all hosts
 `arp -v`| displays the verbos infromation
 `arp -n` | displays shows numerical address instead of symbolic host, port, or usernames

@@ -5,7 +5,7 @@
 Try the following commands in the terminal by typing them in:
 
 Command | Description
----------------------|----------------------------------------------------
+----------------------------|-----------------------------
 `netstat -r` | display kernel routing information
 `netstat -anr`| display kernel routing table without resolving hostname/port names
 `netstat -h` | show all options available for netstat (this can be used for other commands as well)

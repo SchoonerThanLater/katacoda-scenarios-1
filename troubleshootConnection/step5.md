@@ -5,7 +5,7 @@
 Try the following commands in the terminal by typing them in:
 
 Command | Description
----------------------|----------------------------------------------------
+----------------------------|-----------------------------
 `tracepath canvas.nbps.org` | trace the path to canvas
 `tracepath -h`| show the options for tracepath
 
