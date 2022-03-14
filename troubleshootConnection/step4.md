@@ -14,5 +14,3 @@ Command | Description
 
 [Source](https://www.oreilly.com/library/view/centos-quick-start/9781789344875/f41e3a70-41f8-422a-80bf-9d9bb9ade407.xhtml)
 
-nslookup canvas.nbps.org
-nslookup canvas.nbps.org
