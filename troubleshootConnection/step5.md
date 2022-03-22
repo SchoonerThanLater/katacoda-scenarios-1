@@ -1,15 +1,20 @@
-## Using the tracepath command ##
+## Using the arp command ##
 
-`tracepath` is used to trace the path from origin to a destination. 
+`arp` is used to resolve the IP address of a system to its mac address. It stands for *Address Resolution Protocol*
+
+**Syntax:**
+`arp [-v] [-i if] [-H type] -a [hostname]`
 
 Try the following commands in the terminal by typing them in:
 
 Command | Description
 ----------------------------|-----------------------------
-`tracepath canvas.nbps.org` | trace the path to canvas
-`tracepath -h`| show the options for tracepath
+`arp -a` | displays all hosts
+`arp -v`| displays the verbos infromation
+`arp -n` | displays shows numerical address instead of symbolic host, port, or usernames
+`arp -H ether` | checks for the ethernet ports
+`arp -a` | displays the new host
+`arp -d <enter an IP address from arp -a>` | deletes the specified host
 
-On a Windows operating system, `tracepath` would be replaced with `pathping`
 
-
-[Source](https://www.oreilly.com/library/view/centos-quick-start/9781789344875/bad42240-4036-445f-997b-87d399deb57e.xhtml)
+[Source](https://www.geeksforgeeks.org/arp-command-in-linux-with-examples/)

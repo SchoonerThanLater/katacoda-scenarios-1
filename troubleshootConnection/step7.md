@@ -1,26 +1,22 @@
-## Using the ping command ##
+## Using the nmblookup command ##
 
-`ping` is used to verify network connectivty of a remote host. This tells us whether or not the machine is online and responding. It also gives stats for packet loss and latency.
+Use the link below to install nmblookup
 
-`gping` can display a ping graphically. Click the following set of commands to install gping: 
+`apt install samba-common-bin`{{execute}}
 
-```echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
-wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
-sudo apt update
-sudo apt install gping```{{execute}}
+`nmblookup` is used to resolve NetBIOS computer names into IP addresses.
 
-Try the following commands in the terminal by typing them in.
-If process are taking too long, use `^C`{{execute ctrl-seq}} to interrupt the sequence:
+**Syntax:**
+`nmblookup [options] netbios_name`
+
+Try the following commands in the terminal by typing them in:
 
 Command | Description
 ----------------------------|-----------------------------
-`ping 8.8.8.8` | checks if the server google is online
-`gping 8.8.8.8` | shows graphical ping for google
-`ping canvas.nbps.org`| checks if the canvas is online
-`gping canvas.nbps.org` | shows graphical ping for canvas
-`ping -I docker0 8.8.8.8` | checks google through the docker0 port
+`nmblookup -A canvas.nbps.org` | gets the IP address for canvas.nbps.org
+`nmblookup -A wikipedia.org`| gets the IP address for wikipedia.org
+
+On a Windows operating system, `nmblookup` would be replaced with `nbtstat`, `nslookup` or `dig`
 
 
-
-[Source](https://www.oreilly.com/library/view/centos-quick-start/9781789344875/0a85790c-f514-4e1a-b845-aee537cfb831.xhtml)
-
+[Source](https://www.oreilly.com/library/view/using-samba-second/0596002564/re320.html)

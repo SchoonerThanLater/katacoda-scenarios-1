@@ -1,20 +1,26 @@
-## Using the arp command ##
+## Using the ping command ##
 
-`arp` is used to resolve the IP address of a system to its mac address. It stands for *Address Resolution Protocol*
+`ping` is used to verify network connectivty of a remote host. This tells us whether or not the machine is online and responding. It also gives stats for packet loss and latency.
 
-**Syntax:**
-`arp [-v] [-i if] [-H type] -a [hostname]`
+`gping` can display a ping graphically. Click the following set of commands to install gping: 
 
-Try the following commands in the terminal by typing them in:
+```echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
+wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
+sudo apt update
+sudo apt install gping```{{execute}}
+
+Try the following commands in the terminal by typing them in.
+If process are taking too long, use `^C`{{execute ctrl-seq}} to interrupt the sequence:
 
 Command | Description
 ----------------------------|-----------------------------
-`arp -a` | displays all hosts
-`arp -v`| displays the verbos infromation
-`arp -n` | displays shows numerical address instead of symbolic host, port, or usernames
-`arp -H ether` | checks for the ethernet ports
-`arp -a` | displays the new host
-`arp -d <enter an IP address from arp -a>` | deletes the specified host
+`ping 8.8.8.8` | checks if the server google is online
+`gping 8.8.8.8` | shows graphical ping for google
+`ping canvas.nbps.org`| checks if the canvas is online
+`gping canvas.nbps.org` | shows graphical ping for canvas
+`ping -I docker0 8.8.8.8` | checks google through the docker0 port
 
 
-[Source](https://www.geeksforgeeks.org/arp-command-in-linux-with-examples/)
+
+[Source](https://www.oreilly.com/library/view/centos-quick-start/9781789344875/0a85790c-f514-4e1a-b845-aee537cfb831.xhtml)
+
