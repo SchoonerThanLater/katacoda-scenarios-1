@@ -2,12 +2,7 @@
 
 `ping` is used to verify network connectivty of a remote host. This tells us whether or not the machine is online and responding. It also gives stats for packet loss and latency.
 
-`gping` can display a ping graphically. Click the following set of commands to install gping: 
-
-```echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
-wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
-sudo apt update
-sudo apt install gping```{{execute}}
+`gping` can display a ping graphically. 
 
 Try the following commands in the terminal by typing them in.
 If process are taking too long, use `^C`{{execute ctrl-seq}} to interrupt the sequence:
