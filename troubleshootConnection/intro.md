@@ -4,10 +4,10 @@ In this tutorial, we will cover the following topics. These are all stategies to
 
 - ifconfig/ipconfig
 - traceroute/tracert
+    - replacing tracepath/pathping
 - netstat
 - nslookup
-- tracepath/pathping
 - arp
 - ping
-- nmblookup/nbptstat
+
 
