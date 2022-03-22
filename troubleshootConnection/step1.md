@@ -8,6 +8,7 @@ Command | Description
 `ifconfig -a` | Display all interfaces information with are available, active or inactive
 `ifconfig docker0` | Display the configuration of the interface docker0
 `ifconfig docker0 up` | Activate docker0
+`ifconfig --help`  | Displays other options
 
 
 On a Windows operating system, `ifconfig` would be replaced with `ipconfig`
