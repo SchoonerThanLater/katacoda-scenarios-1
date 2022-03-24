@@ -20,7 +20,7 @@ You'll be entered in the parted tool, here you can run commands to partition you
 **Select the device**
 
 ```
-select /dev/sdb2
+select /dev/vdb
 ```
 
 To select the device you'll be working with, select it by its device name.
@@ -58,7 +58,7 @@ Now just choose a start and end point and make the partition, you'll need to spe
 You can also resize a partition if you don't have any space. 
 
 ```
-resize 2 1245 3456
+resizepart
 ```
 
 Select the partition number and then the start and end points of where you want to resize it to. 
