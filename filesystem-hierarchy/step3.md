@@ -67,7 +67,9 @@ Number  Start   End     Size     File system  Name        Flags
 ```
 
 ## Exercise
-
+Run `parted /dev/vdb`{{execute}} on your machine.
+Now, run `mklabel msdos`{{execute}} and quit Parted with `quit`{{execute}}.
+Repeat this process for `/dev/vdb`, `/dev/vdc`, and `/dev/vdd`.
 Run `parted -l`{{execute}} on your machine and evaluate your results.
 
 >>Q1: What partition type is used to create more than 4 partitions in the MBR partitioning scheme?<<
