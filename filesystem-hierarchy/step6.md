@@ -3,7 +3,7 @@ Before you can view the contents of your filesystem, you will have to mount it. 
 First create the mount point, in our case **mkdir /mydrive**
 
 ```
-$ sudo mount -t ext4 /dev/sdb2 /mydrive
+$ sudo mount -t ext4 /dev/vdb2 /mydrive
 ```
 
 Simple as that! Now when we go to /mydrive we can see our filesystem contents, the **-t** specifies the type of filesystem, then we have the device location, then the mount point. 
@@ -17,7 +17,7 @@ $ sudo umount /mydrive
 or 
 
 ```
-$ sudo umount /dev/sdb2
+$ sudo umount /dev/vdb2
 ```
 
 Remember that the kernel names devices in the order it finds them. What if our device name changes for some reason after we mount it? Well fortunately, you can use a device's universally unique ID (UUID) instead of a name.
