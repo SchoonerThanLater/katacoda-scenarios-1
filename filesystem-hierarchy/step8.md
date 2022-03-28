@@ -11,14 +11,14 @@ What is this swap partition? Well swap is what we used to allocate virtual memor
 
 **Using a partition for swap space**
 
-Let's say we wanted to set our partition of /dev/sdb2 to be used for swap space. 
+Let's say we wanted to set our partition of /dev/vdb to be used for swap space. 
 
 <ol>
 * First make sure we don't have anything on the partition
-* Run: mkswap /dev/sdb2 to initialize swap areas
-* Run: swapon /dev/sdb2 this will enable the swap device
+* Run: mkswap /dev/vdb to initialize swap areas
+* Run: swapon /dev/vdb this will enable the swap device
 * If you want the swap partition to persist on bootup, you need to add an entry to the /etc/fstab file. sw is the filesystem type that you'll use.
-* To remove swap: swapoff /dev/sdb2
+* To remove swap: swapoff /dev/vdb
 </ol>
 
 Generally you should allocate about twice as much swap space as you have memory. But modern systems today are usually pretty powerful enough and have enough RAM as it is.
