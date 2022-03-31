@@ -7,7 +7,7 @@ First we'll need to partition our disk. There are many tools available to do thi
 * `gparted` - this is the GUI version of parted
 * `gdisk` - fdisk, but it does not support MBR only GPT
 
-Let's use parted to do our partitioning. Let's say I connect the USB device and we see the device name is /dev/sdb2. 
+Let's use parted to do our partitioning. Let's say I connect the USB device and we see the device name is /dev/vdb2. 
 
 **Launch parted**
 
@@ -45,6 +45,8 @@ Number  Start   End     Size    Type      File system     Flags
 
 Here you will see the available partitions on the device. The **start** and **end** points are where the partitions take up space on the hard drive, you'll want to find a good start and end location for your partitions. 
 
+If you experience an error, go back and complete step 3.
+
 **Partition the device**
 
 ```
@@ -53,14 +55,30 @@ mkpart primary 123 4567
 
 Now just choose a start and end point and make the partition, you'll need to specify the type of partition depending on what table you used. 
 
-Now, create an extended partition, and within the start and end points of that partition, create a logical partition.
+Now, create an extended partition:
 
+```
+mkpart extended 4600 6000
+```
+ and within the start and end points of that partition, create a logical partition.
+
+```
+mkpart logical 4700 5000
+```
+
+View the partions on the device with
+
+```
+(parted) print
+```
 **Resize a partition**
 
 You can also resize a partition if you don't have any space. 
 
 ```
-resizepart
+(parted) resizepart
+Partition number? 2
+End? [6000MB]? 6200
 ```
 
 Select the partition number and then the start and end points of where you want to resize it to. 
