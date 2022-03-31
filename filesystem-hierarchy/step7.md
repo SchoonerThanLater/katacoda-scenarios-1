@@ -2,7 +2,7 @@ When we want to automatically mount filesystems at startup we can add them to a 
 
 ```
 
-pete@icebox:~$ cat /etc/fstab
+$ cat /etc/fstab
 UUID=130b882f-7d79-436d-a096-1e594c92bb76 /               ext4    relatime,errors=remount-ro 0       1
 UUID=78d203a0-7c18-49bd-9e07-54f44cdb5726 /home           xfs     relatime        0       2
 UUID=22c3d34b-467e-467c-b44d-f03803c2c526 none            swap    sw              0       0
