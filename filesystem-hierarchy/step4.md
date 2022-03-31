@@ -53,6 +53,8 @@ mkpart primary 123 4567
 
 Now just choose a start and end point and make the partition, you'll need to specify the type of partition depending on what table you used. 
 
+Now, create an extended partition, and within the start and end points of that partition, create a logical partition.
+
 **Resize a partition**
 
 You can also resize a partition if you don't have any space. 
