@@ -1,6 +1,12 @@
 Before you can view the contents of your filesystem, you will have to mount it. To do that I'll need the device location, the filesystem type and a mount point, the mount point is a directory on the system where the filesystem is going to be attached. So we basically want to mount our device to a mount point. 
 
-First create the mount point, in our case **mkdir /mydrive**
+First create the mount point; type
+
+```
+ $ mkdir /mydrive
+
+```
+and then
 
 ```
 $ sudo mount -t ext4 /dev/vdb1 /mydrive
